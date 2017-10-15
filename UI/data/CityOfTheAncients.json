@@ -1,15 +1,69 @@
 {
   "name": "City of the Ancients",
 
+  "classes":
+  [
+    {
+      "name":"Bandido",
+      "key words":["Outlaw"],
+      "initiative":3,
+      "stats":{
+        "agility":2,
+        "cunning":1,
+        "spirit":3,
+        "strength":4,
+        "lore":3,
+        "luck":2,
+        "range": 5,
+        "melee": 4,
+        "max Grit": 2,
+        "combat": 2,
+        "health": 16,
+        "Sanity": 8,
+        "Defense": 4,
+        "Willpower": 5
+      },
+      "startingItems":[
+        "Pistol"
+      ]
+    },
+
+    { 
+      "name": "Gunslinger",
+      "key words":["showman"],
+      "initiative":6,
+      "stats":{
+        "agility":3,
+        "cunning":3,
+        "spirit":2,
+        "strength":2,
+        "lore":2,
+        "luck":4,
+        "range": 3,
+        "melee": 5,
+        "max Grit": 2,
+        "combat": 1,
+        "health": 10,
+        "Sanity": 12,
+        "Defense": 5,
+        "Willpower": 4
+      },
+        "startingItems": [
+          "Pistol"
+        ]
+    }
+  ],
+    
+ 
+
+  
   "sidebagItems":[
 
   ],
   "items": [
 
   ],
-  "classes":[
-
-  ],
+ 
   "monsters":[
 
   ]

@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npm i && node server.js"
+    "start": "npm i && node server.js",
+    "publish:dev":"aws s3 sync UI s3://shadows.of.brimstone/dev",
+    "publish:staging": "aws s3 sync s3://shadows.of.brimstone/dev s3://shadows.of.brimstone/staging",
+    "publish:prod": "aws s3 sync s3://shadows.of.brimstone/staging s3://shadows.of.brimstone/prod"
   },
   "repository": {
     "type": "git",
