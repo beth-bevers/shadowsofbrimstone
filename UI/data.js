@@ -9,4 +9,4 @@ function loadJSON(callback){
     xobj.send(null);
 }
 
-loadJSON((data) => console.log(data));
+loadJSON((data) => window.data = data);
