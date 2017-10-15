@@ -5,20 +5,12 @@ html {
 body {
     width: 100%;
     font-family: 'Ubuntu';
-    background-color: #fefefe;
+    background-color: #fffff9;
     color: #393535;
     font-size: 14px;
     font-weight: 400;
     line-height: 1.2em;
     overflow-x: hidden;
-}
-hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-bottom: 1px solid rgba(100, 100, 100, .5);
-  margin: 1em 0;
-  padding: 0;
 }
 h1,
 h2,
