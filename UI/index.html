@@ -1,138 +1,138 @@
-    <!DOCTYPE html>
-    <html lang="en">
-    
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
-        <meta name="description" content="">
-        <meta name="author" content="">
-   <script src="data.js"/>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <script src="data.js"></script>
     <title>Shadows of Brimstone</title>
-        <!-- Theme CSS -->
-        <link href="/css/style.css" rel="stylesheet">
-    </head>
-    
-    <body id="top">
-        <!--Nav Bar
-        <nav id="navigation"></nav>-->
-        <div class="main-content">
-                <h1>Shadows of Brimstone</h1>
+    <!-- Theme CSS -->
+    <link href="/css/style.css" rel="stylesheet">
+</head>
+
+<body id="top">
+<!--Nav Bar
+<nav id="navigation"></nav>-->
+<div class="main-content">
+    <h1>Shadows of Brimstone</h1>
+    <div>
+        <h2>Choose the base character</h2>
+        <form action="/my-handling-form-page" method="post">
+            <select name="Charselect">
+                <option value="Bandido" selected>Bandido</option>
+                <option value="Gunslinger">Gunslinger</option>
+                <option value="USMarshall">US Marshall</option>
+                <option value="value3">Saloon Girl</option>
+            </select>
+        </form>
+    </div>
+    <div>
+        <h2>Display Character</h2>
+    </div>
+
+    <div>
+        <form action="/my-handling-form-page" method="post">
+            <h2>Enter Changed Stats</h2>
             <div>
-                <h2>Choose the base character</h2>
-                <form action="/my-handling-form-page" method="post">
-                    <select name="Charselect">
-                        <option value="Bandido" selected>Bandido</option> 
-                        <option value="Gunslinger">Gunslinger</option>
-                        <option value="USMarshall">US Marshall</option>
-                        <option value="value3">Saloon Girl</option>
-                      </select>
-                </form>
-            </div>
-            <div>
-                    <h2>Display Character</h2>
+                <div>
+                    <label for="charName">Character Name:</label>
+                    <input type="text" id="charName" name="character_name">
                 </div>
-            
-            <div>
-                <form action="/my-handling-form-page" method="post">
-                    <h2>Enter Changed Stats</h2>
-                    <div>
-                        <div>
-                            <label for="charName">Character Name:</label>
-                            <input type="text" id="charName" name="character_name">
-                        </div>
-                        <div>
-                            <label for="charClass">Character Class:</label>
-                            <input type="text" id="charClass" name="character_class">
-                        </div>
-                        <div>
-                            <label for="charAttributes">Keywords/Attributes:</label>
-                            <input type="text" id="charAttributes" name="character_attributes">
-                        </div>
-                    </div>
-                    <div>
-                        <div>
-                            <label for="charGold">Gold</label>
-                            <input type="int" id="charGold" name="stat_gold">
-                            </div>
-                        <div>
-                            <label for="charExp">Experience</label>
-                            <input type="int" id="charExp" name="stat_exp">
-                        </div>
-                        <div>
-                            <label for="charDS">Dark Stone</label>
-                            <input type="int" id="charDS" name="stat_ds">
-                        </div>
-                        <div>
-                            <label for="charLevel">Level</label>
-                            <input type="int" id="charLevel" name="stat_lvl">
-                        </div>
-                        <div>
-                            <label for="charInit">Initiative</label>
-                            <input type="int" id="charInit" name="stat_initiative">
-                        </div>
-                        <div>
-                            <label for="charCombat">Combat</label>
-                            <input type="int" id="charCombat" name="stat_com">
-                        </div>
-                        <div>
-                            <label for="charGrit">Max Grit</label>
-                            <input type="int" id="charGrit" name="stat_grit">
-                        </div>
-                    </div>
-                    <div>
-                        <div>
-                            <label for="charAGILITY">Agility</label>
-                            <input type="int" id="charAGILITY" name="skill_agility">
-                        </div>
-                        <div>
-                            <label for="charCUNNING">Cunning</label>
-                            <input type="int" id="charCUNNING" name="skill_cunning">
-                        </div>
-                        <div>
-                            <label for="charSPIRIT">Spirit</label>
-                            <input type="int" id="charSPIRIT" name="skill_spirit">
-                        </div>
-                        <div>
-                            <label for="charSTRENGTH">Strength</label>
-                            <input type="int" id="charSTRENGTH" name="skill_strength">
-                        </div>
-                        <div>
-                            <label for="charLORE">Lore</label>
-                            <input type="int" id="charLORE" name="skill_lore">
-                        </div>
-                        <div>
-                            <label for="charLUCK">Luck</label>
-                            <input type="int" id="charLUCK" name="skill_luck">
-                        </div>
-                    </div>
-                    <div>
-                        <div>
-                            <div>
-                                <label for="charHealth">Health</label>
-                                <input type="int" id="charHealth" name="stat_health">
-                            </div>
-                            <div>
-                                <label for="charDef">Defense</label>
-                                <input type="int" id="charDef" name="stat_defence">
-                            </div>
-                        </div>
-                        <div>
-                            
-                            <div>
-                                <label for="charSanitiy">Sanity</label>
-                                <input type="int" id="charSanitiy" name="stat_san">
-                            </div>
-                            <div>
-                                <label for="charWill">Willpower</label>
-                                <input type="int" id="charWill" name="stat_willpower">
-                            </div>
-                        </div>
-                    </div>
-                </form>
+                <div>
+                    <label for="charClass">Character Class:</label>
+                    <input type="text" id="charClass" name="character_class">
+                </div>
+                <div>
+                    <label for="charAttributes">Keywords/Attributes:</label>
+                    <input type="text" id="charAttributes" name="character_attributes">
+                </div>
             </div>
-        </div>
-        <!--FOOTER-->
-        <footer id="footer"></footer>
-    </body>
-    </html>
+            <div>
+                <div>
+                    <label for="charGold">Gold</label>
+                    <input type="int" id="charGold" name="stat_gold">
+                </div>
+                <div>
+                    <label for="charExp">Experience</label>
+                    <input type="int" id="charExp" name="stat_exp">
+                </div>
+                <div>
+                    <label for="charDS">Dark Stone</label>
+                    <input type="int" id="charDS" name="stat_ds">
+                </div>
+                <div>
+                    <label for="charLevel">Level</label>
+                    <input type="int" id="charLevel" name="stat_lvl">
+                </div>
+                <div>
+                    <label for="charInit">Initiative</label>
+                    <input type="int" id="charInit" name="stat_initiative">
+                </div>
+                <div>
+                    <label for="charCombat">Combat</label>
+                    <input type="int" id="charCombat" name="stat_com">
+                </div>
+                <div>
+                    <label for="charGrit">Max Grit</label>
+                    <input type="int" id="charGrit" name="stat_grit">
+                </div>
+            </div>
+            <div>
+                <div>
+                    <label for="charAGILITY">Agility</label>
+                    <input type="int" id="charAGILITY" name="skill_agility">
+                </div>
+                <div>
+                    <label for="charCUNNING">Cunning</label>
+                    <input type="int" id="charCUNNING" name="skill_cunning">
+                </div>
+                <div>
+                    <label for="charSPIRIT">Spirit</label>
+                    <input type="int" id="charSPIRIT" name="skill_spirit">
+                </div>
+                <div>
+                    <label for="charSTRENGTH">Strength</label>
+                    <input type="int" id="charSTRENGTH" name="skill_strength">
+                </div>
+                <div>
+                    <label for="charLORE">Lore</label>
+                    <input type="int" id="charLORE" name="skill_lore">
+                </div>
+                <div>
+                    <label for="charLUCK">Luck</label>
+                    <input type="int" id="charLUCK" name="skill_luck">
+                </div>
+            </div>
+            <div>
+                <div>
+                    <div>
+                        <label for="charHealth">Health</label>
+                        <input type="int" id="charHealth" name="stat_health">
+                    </div>
+                    <div>
+                        <label for="charDef">Defense</label>
+                        <input type="int" id="charDef" name="stat_defence">
+                    </div>
+                </div>
+                <div>
+
+                    <div>
+                        <label for="charSanitiy">Sanity</label>
+                        <input type="int" id="charSanitiy" name="stat_san">
+                    </div>
+                    <div>
+                        <label for="charWill">Willpower</label>
+                        <input type="int" id="charWill" name="stat_willpower">
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<!--FOOTER-->
+<footer id="footer"></footer>
+</body>
+</html>
 
